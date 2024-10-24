@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'docker_hub', variable: 'Kj@129000')]) {
-                    sh 'docker login -u kavyajain9163@gmail.com -p ${docker_hub}'
+                    sh 'docker login -u kavyajain9163@gmail.com -p Kj@129000'
 }
                     sh 'docker push Kjn22/learning'
                 }
